@@ -1,0 +1,45 @@
+<style>
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+    }
+  
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  
+    input[type="number"],
+    input[type="text"] {
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    button[type="submit"] {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+<h3>Thêm lớp</h3>
+<form action="/add_class" method="post">
+    ID: <input type="number" name="id"> <br>
+    Name: <input type="text" name="name"> <br>
+    Number Student: <input type="number" name="numberStudent"> <br>
+    <button type="submit">Thêm</button>
+</form>
